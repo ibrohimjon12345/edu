@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="py-5 bg-white">
+    <header class="py-5 bg-white lg:py-5">
         <div class="max-w-[1240px] px-5 mx-auto flex justify-between items-center">
             <div class="flex items-center gap-[56.8px]">
-                <a class="flex" href="#">
+                <a class="w-[200px] lg:flex" href="#">
                     <svg width="275" height="80" viewBox="0 0 275 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M64.49 27.87H82.97V17.25H64.49V12.13H85.53V1.02002H50V44.73H86.34V33.62H64.49V27.87Z"
                             fill="black" />
@@ -81,24 +82,94 @@
                             fill="black" />
                     </svg>
                 </a>
-                <p class="font-sans font-normal text-base text-[#27272A]">Экстерьерные пленки DECORS</p>
+                <a href="#" class="font-sans hidden lg:block font-normal text-base text-[#27272A]">Экстерьерные пленки
+                    DECORS</a>
             </div>
             <div class="flex gap-[25px]">
-                <div class="block">
-                    <p class="mb-[12px] font-sans font-bold text-[16px] text-[#27272A] leading-[20px]">8 (800) 55-11-607
-                    </p>
+                <div class="hidden lg:block">
+                    <a href=""
+                        class="mb-[12px] inline-block font-sans font-bold text-[16px] text-[#27272A] leading-[20px]">8
+                        (800)
+                        55-11-607
+                    </a>
                     <p class="text-[#27272A] font-sans font-bold leading-[20px] text-[16px] text-right">Позвонить Вам?
                     </p>
                 </div>
-                <a class="text-center bg-[#D42E5B] px-[30px] pt-[11px] pb-[8px] rounded-[10px]" href="#">
+                <a class="bg-[#D42E5B] hidden lg:block text-center px-[30px] pt-[11px] pb-[8px] rounded-[10px] hover:bg-[#9F2436]"
+                    href="#">
                     <p class="font-bold font-sans text-[14px] leading-[22px] text-[#FFFFFF]">Напишите нам</p>
                     <p class="leading-[22px] font-sans text-[14px] font-normal text-[#FFFFFF]">Онлайн чат</p>
                 </a>
             </div>
+            <button class="block menu lg:hidden">
+                <svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="35" height="4" rx="2" fill="#27272A" />
+                    <rect y="9.00006" width="35" height="4" rx="2" fill="#27272A" />
+                    <rect y="17.9999" width="35" height="4" rx="2" fill="#27272A" />
+                </svg>
+            </button>
+            <div
+                class="block bg-[#9F2436] text-right h-full transition-all menu_div pt-[16px] pb-[116px] pl-[32px] pr-[26px] w-full lg:hidden fixed top-0 right-[-100%]">
+                <button class="text-right x_menu mb-[18px]">
+                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8.83887" y="30.052" width="30" height="5" rx="2.5"
+                            transform="rotate(-45 8.83887 30.052)" fill="white" />
+                        <rect x="30.0522" y="33.5875" width="30" height="5" rx="2.5"
+                            transform="rotate(-135 30.0522 33.5875)" fill="white" />
+                    </svg>
+                </button>
+                <ul class="block text-center mb-[21px]">
+                    <li><a href="/index.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] border-b-[1px] border-b-[#D42E5B]">Главная</a>
+                    </li>
+                    <li><a href="/products.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] pt-[10px] border-b-[1px] border-b-[#D42E5B]">Продукция</a>
+                    </li>
+                    <li><a href="/services.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] pt-[10px] border-b-[1px] border-b-[#D42E5B]">Услуги</a>
+                    </li>
+                    <li><a href="/advantages.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] pt-[10px] border-b-[1px] border-b-[#D42E5B]">Преимущества</a>
+                    </li>
+                    <li><a href="/stock.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] pt-[10px] border-b-[1px] border-b-[#D42E5B]">Акции</a>
+                    </li>
+                    <li><a href="/revies.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] pt-[10px] border-b-[1px] border-b-[#D42E5B]">Отзывы</a>
+                    </li>
+                    <li><a href="/certificate.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] pt-[10px] border-b-[1px] border-b-[#D42E5B]">Сертификаты</a>
+                    </li>
+                    <li><a href="/news.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] pt-[10px] border-b-[1px] border-b-[#D42E5B]">Новости
+                            и статьи</a></li>
+                    <li><a href="/contact.html"
+                            class="text-left font-sans font-bold text-[16px] leading-3 pb-[10px] pt-[10px]">Контакты</a>
+                    </li>
+                </ul>
+                <div class="flex gap-[10px]">
+                    <input type=""
+                        class="placeholder:font-normal font-sans text-[14px] leading-[22px] py-[14px] pl-[15px] pr-[78px] rounded-[10px]"
+                        placeholder="Что будем искать?">
+                    <a href="#"
+                        class="font-sans font-bold text-[14px] leading-[22px] text-[#FFFFFF] py-[14px] px-[28px] bg-[#D42E5B] rounded-[10px]">Найти</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="py-7 bg-[#BB2649]">
+    <section class="pb-[10px] block lg:hidden">
+        <div class="max-w-[1240px] mx-auto flex justify-between px-[15px]">
+            <a href="#"
+                class="font-sans font-bold text-[16px] leading-6 items-center inline-block text-[#000000] pt-[14px] pb-[17px] px-[27px] border-[0.5px] rounded-[10px] border-[#E1E0E0] hover:text-[#9F2436] hover:border-[#9F2436] hover:border-[3px]">8
+                (800) 55-11-607</a>
+            <a href="#"
+                class="font-sans font-bold text-[14px] leading-5 text-[#FFF] bg-[#D42E5B] py-[17.5px] px-[39px] rounded-[10px] border-none hover:bg-[#9F2436]">Онлайн
+                чат</a>
+        </div>
+    </section>
+
+    <section class="hidden lg:block py-7 bg-[#BB2649]">
         <div class="max-w-[1240px] px-5 mx-auto flex justify-between items-center">
             <a class="/index.html" href="#">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,108 +258,170 @@
             </a>
         </div>
     </section>
-
-    <section class="py-[60px]">
-        <div class="max-w-[1240px] mx-auto">
-            <ul class="flex gap-[5px] mb-[15px]">
-                <li><a class="font-sans font-normal text-[16px] leading-6" href="#">Главная /</a></li>
-                <li><a class="font-sans font-normal text-[16px] leading-6" href="#">О компании</a></li>
+    <section class="sm:mb-[60px] mb-[30px] py-[60px]">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1240px]">
+            <ul class="flex items-center gap-1 sm:mb-[15px] mb-6 sm:ml-[40px]">
+                <li class=""><a href="./index.html" class="text-black font-normal sm:text-base text-xs">Главная /</a>
+                </li>
+                <li class="">
+                    <p" class="text-black font-normal sm:text-base text-xs">О компании</p>
+                </li>
             </ul>
-            <h2 class="mb-[20px] font-sans font-bold text-[40px] leading-[48px] text-[#000000]">О компании</h2>
-            <p class="font-sans font-semibold text-[24px] leading-8 text-[#000000]">Компания «ДекорС» была основана в 2011 г. ее владельцем Виталием Узбековым и в этом же году стала первым официальным дистрибьютором LG Hausys в России.
+            <h1
+                class="sm:font-bold sm:text-black sm:mb-[17px] sm:text-[40px] font-semibold sm:ml-[40px] text-[20px] mb-[15px]">
+                О компании</h1>
+            <p
+                class="sm:font-semibold sm:text-2xl text-black sm:max-w-[1240px] max-w-[360px] font-normal text-xs sm:ml-10">
+                Компания «ДекорС» была основана в 2011 г. ее владельцем Виталием Узбековым и в этом же году стала первым
+                официальным дистрибьютором LG Hausys в России.
                 <br><br>
-                Буква «С», в названии символизирует сервис, а «Декор» отражает многообразие пленок, которое представлено для декорации профиля.
+                Буква «С», в названии символизирует сервис, а «Декор» отражает многообразие пленок, которое представлено
+                для декорации профиля.
                 <br><br>
-                Компания проделала огромный путь от маленькой фирмы по продаже пленок, до поставщика комплекса услуг и материалов для ламинационного бизнеса.
+                Компания проделала огромный путь от маленькой фирмы по продаже пленок, до поставщика комплекса услуг и
+                материалов для ламинационного бизнеса.
                 <br><br>
-                Сегодня «ДекорС» — команда профессионалов, которые запускают ламинационный бизнес «под ключ». Мы не только обеспечиваем ламинационные цеха по всей стране (и не только) всем необходимым для бесперебойной работы, мы ежегодно помогаем стартовать практически с ноля не одному десятку компаний, которые решили открыть собственный ламинационный цех. Помогаем рассчитать стартап и подобрать наилучшее оборудование, обучаем сотрудников, которые будут работать на станке и принимаем у них экзамены, оказываем технические консультации, снабжаем всей необходимой профильной информацией и материалами. Оказываем тот самый высококлассный сервис!
+                Сегодня «ДекорС» — команда профессионалов, которые запускают ламинационный бизнес «под ключ». Мы не
+                только обеспечиваем ламинационные цеха по всей стране (и не только) всем необходимым для бесперебойной
+                работы, мы ежегодно помогаем стартовать практически с ноля не одному десятку компаний, которые решили
+                открыть собственный ламинационный цех. Помогаем рассчитать стартап и подобрать наилучшее оборудование,
+                обучаем сотрудников, которые будут работать на станке и принимаем у них экзамены, оказываем технические
+                консультации, снабжаем всей необходимой профильной информацией и материалами. Оказываем тот самый
+                высококлассный сервис!
                 <br><br>
-                Мы были одним из крупнейших дистрибьюторов компании LG Hausys в мире. Кроме того, в том числе благодаря нашим усилиям, пленка LG из продукта, который в 2010г. никто не хотел перерабатывать, превратилась в бренд №1 на рынке экстерьерных пленок России (на основании таможенной статистики внешней торговли РФ в 2019г.).
+                Мы были одним из крупнейших дистрибьюторов компании LG Hausys в мире. Кроме того, в том числе благодаря
+                нашим усилиям, пленка LG из продукта, который в 2010г. никто не хотел перерабатывать, превратилась в
+                бренд №1 на рынке экстерьерных пленок России (на основании таможенной статистики внешней торговли РФ в
+                2019г.).
                 <br><br>
-                Компания «ДекорС» внесла значительный вклад в продвижение «цветного» окна на Российском рынке, внесла большой вклад во внедрение ламинационных линий на оконных производствах практически в каждом городе нашей страны, и в развитие ламинации в России в целом. С появлением «ДекорС» ламинация оконных профилей стала более доступным делом. Мы смогли предоставить новый уровень сервиса. Декоративная пленка стала ближе к клиенту не только за счет цены, но и за счет сроков ее появления непосредственно в ламинационном цехе. Раньше менеджеры на местах старались отговорить своих клиентов от покупки цветного окна из-за громадных сроков производства. С нашим приходом на рынок, ламинация с каждым годом становилась для клиентов все более понятным процессом, на котором можно хорошо заработать.
+                Компания «ДекорС» внесла значительный вклад в продвижение «цветного» окна на Российском рынке, внесла
+                большой вклад во внедрение ламинационных линий на оконных производствах практически в каждом городе
+                нашей страны, и в развитие ламинации в России в целом. С появлением «ДекорС» ламинация оконных профилей
+                стала более доступным делом. Мы смогли предоставить новый уровень сервиса. Декоративная пленка стала
+                ближе к клиенту не только за счет цены, но и за счет сроков ее появления непосредственно в ламинационном
+                цехе. Раньше менеджеры на местах старались отговорить своих клиентов от покупки цветного окна из-за
+                громадных сроков производства. С нашим приходом на рынок, ламинация с каждым годом становилась для
+                клиентов все более понятным процессом, на котором можно хорошо заработать.
                 <br><br>
-                Мы совершили гигантский скачок от складского запаса пленки на 10000 евро, до склада на сумму более 1 млн евро.
+                Мы совершили гигантский скачок от складского запаса пленки на 10000 евро, до склада на сумму более 1 млн
+                евро.
                 <br><br>
-                Сегодня «ДекорС» — производитель. Кроме нашей авторской разработки – самоклеящихся листов для ламинации сэндвича, которые мы создаем в г.Екатеринбург, мы принимаем участие в проектировании и производстве ламинационного оборудования под турецким брендом Vermak.
+                Сегодня «ДекорС» — производитель. Кроме нашей авторской разработки – самоклеящихся листов для ламинации
+                сэндвича, которые мы создаем в г.Екатеринбург, мы принимаем участие в проектировании и производстве
+                ламинационного оборудования под турецким брендом Vermak.
                 <br><br>
-                «ДекорС» — настоящий эксперт в области качества экстерьерных пленок. Мы не просто продаем товар, мы прекрасно в нем разбираемся. Отлично ориентируемся в том, что на сегодняшний день представляет из себя рынок экстерьерных пленок. Мы знаем, куда смотреть при выборе любых материалов для ламинации и охотно делимся этой информацией с нашими клиентами.
+                «ДекорС» — настоящий эксперт в области качества экстерьерных пленок. Мы не просто продаем товар, мы
+                прекрасно в нем разбираемся. Отлично ориентируемся в том, что на сегодняшний день представляет из себя
+                рынок экстерьерных пленок. Мы знаем, куда смотреть при выборе любых материалов для ламинации и охотно
+                делимся этой информацией с нашими клиентами.
                 <br><br>
-                Летом 2021г. после более чем 10 лет плодотворного сотрудничества по обоюдному согласию мы решили прекратить наши дилерские отношения с компанией LG Hausys.
+                Летом 2021г. после более чем 10 лет плодотворного сотрудничества по обоюдному согласию мы решили
+                прекратить наши дилерские отношения с компанией LG Hausys.
                 <br><br>
                 Совпали 2 ключевых фактора, которые повлияли на такое решение:
                 <br><br>
-                1. В связи со сменой владельца летом этого года компания LG Hausys была переименована в LХ Hausys. По той же причине пленки LG не стало, а появилась никому не известная пленка LX.
+                1. В связи со сменой владельца летом этого года компания LG Hausys была переименована в LХ Hausys. По
+                той же причине пленки LG не стало, а появилась никому не известная пленка LX.
                 <br><br>
-                2. Несколько лет назад мы стали официальными дистрибьюторами знаменитой компании Hyundai L&C, и летом 2021г. стало очевидно, что спрос на высокотехнологичную пленку от этого производителя значительно превысил спрос на LХ. Для того, чтобы обеспечить бесперебойные поставки товара клиентам «ДекорС» мы решили сконцентрировать свое внимание на экстерьерной пленке от конгломерата Hyundai. Видим в этом продукте больше потенциала, т.к. по своим техническим характеристикам, Hyundai превосходит своих основных конкурентов. У пленки Hyundai защитный акриловый слой 70 мкм, слой праймера, улучшающий адгезию с профилем, сертификат RAL, испытания на 24 года эксплуатации, прекрасные отзывы. Hyundai – это воплощение современных технологий в области производства экстерьерных пленок!</p>
+                2. Несколько лет назад мы стали официальными дистрибьюторами знаменитой компании Hyundai L&C, и летом
+                2021г. стало очевидно, что спрос на высокотехнологичную пленку от этого производителя значительно
+                превысил спрос на LХ. Для того, чтобы обеспечить бесперебойные поставки товара клиентам «ДекорС» мы
+                решили сконцентрировать свое внимание на экстерьерной пленке от конгломерата Hyundai. Видим в этом
+                продукте больше потенциала, т.к. по своим техническим характеристикам, Hyundai превосходит своих
+                основных конкурентов. У пленки Hyundai защитный акриловый слой 70 мкм, слой праймера, улучшающий адгезию
+                с профилем, сертификат RAL, испытания на 24 года эксплуатации, прекрасные отзывы. Hyundai – это
+                воплощение современных технологий в области производства экстерьерных пленок!
+            </p>
         </div>
     </section>
 
-    <section class="pt-[80px] pb-[61px] bg-[#BB2649]">
-        <div class="max-w-[1240px] px-5 mx-auto">
-            <div class="flex justify-between mb-[60px]">
-                <div class="flex gap-[15px]">
-                    <div class="">
-                        <svg class="mb-[100px]" width="34" height="34" viewBox="0 0 34 34" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M26.9167 17C26.9167 14.2375 25.9545 11.8941 24.0302 9.96979C22.1059 8.04549 19.7625 7.08333 17 7.08333V4.25C18.7708 4.25 20.4295 4.58646 21.976 5.25937C23.5226 5.93229 24.8684 6.84132 26.0135 7.98646C27.1587 9.1316 28.0677 10.4774 28.7406 12.024C29.4135 13.5705 29.75 15.2292 29.75 17H26.9167ZM21.25 17C21.25 15.8194 20.8368 14.816 20.0104 13.9896C19.184 13.1632 18.1806 12.75 17 12.75V9.91667C18.9597 9.91667 20.6302 10.6073 22.0115 11.9885C23.3927 13.3698 24.0833 15.0403 24.0833 17H21.25ZM28.2625 29.75C25.3111 29.75 22.3951 29.1066 19.5146 27.8198C16.634 26.533 14.0132 24.709 11.6521 22.3479C9.29097 19.9868 7.46701 17.366 6.18021 14.4854C4.8934 11.6049 4.25 8.68889 4.25 5.7375C4.25 5.3125 4.39167 4.95833 4.675 4.675C4.95833 4.39167 5.3125 4.25 5.7375 4.25H11.475C11.8056 4.25 12.1007 4.36215 12.3604 4.58646C12.6201 4.81076 12.7736 5.07639 12.8208 5.38333L13.7417 10.3417C13.7889 10.7194 13.7771 11.0382 13.7063 11.2979C13.6354 11.5576 13.5056 11.7819 13.3167 11.9708L9.88125 15.4417C10.3535 16.3153 10.9142 17.1594 11.5635 17.974C12.2128 18.7885 12.9271 19.5736 13.7063 20.3292C14.4382 21.0611 15.2056 21.7399 16.0083 22.3656C16.8111 22.9913 17.6611 23.5639 18.5583 24.0833L21.8875 20.7542C22.1 20.5417 22.3774 20.3823 22.7198 20.276C23.0622 20.1698 23.3986 20.1403 23.7292 20.1875L28.6167 21.1792C28.9472 21.2736 29.2188 21.4448 29.4312 21.6927C29.6437 21.9406 29.75 22.2181 29.75 22.525V28.2625C29.75 28.6875 29.6083 29.0417 29.325 29.325C29.0417 29.6083 28.6875 29.75 28.2625 29.75ZM8.53542 12.75L10.8729 10.4125L10.2708 7.08333H7.11875C7.23681 8.05139 7.40208 9.00764 7.61458 9.95208C7.82708 10.8965 8.13403 11.8292 8.53542 12.75ZM21.2146 25.4292C22.1354 25.8306 23.074 26.1493 24.0302 26.3854C24.9865 26.6215 25.9486 26.775 26.9167 26.8458V23.7292L23.5875 23.0562L21.2146 25.4292Z"
-                                fill="white" />
-                        </svg>
-                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M16.5 16.5C17.2563 16.5 17.9036 16.2307 18.4422 15.6922C18.9807 15.1536 19.25 14.5063 19.25 13.75C19.25 12.9938 18.9807 12.3464 18.4422 11.8078C17.9036 11.2693 17.2563 11 16.5 11C15.7438 11 15.0964 11.2693 14.5578 11.8078C14.0193 12.3464 13.75 12.9938 13.75 13.75C13.75 14.5063 14.0193 15.1536 14.5578 15.6922C15.0964 16.2307 15.7438 16.5 16.5 16.5ZM16.5 26.6063C19.2958 24.0396 21.3698 21.7078 22.7219 19.6109C24.074 17.5141 24.75 15.6521 24.75 14.025C24.75 11.5271 23.9536 9.48177 22.3609 7.88906C20.7682 6.29635 18.8146 5.5 16.5 5.5C14.1854 5.5 12.2318 6.29635 10.6391 7.88906C9.04635 9.48177 8.25 11.5271 8.25 14.025C8.25 15.6521 8.92604 17.5141 10.2781 19.6109C11.6302 21.7078 13.7042 24.0396 16.5 26.6063ZM16.5 30.25C12.8104 27.1104 10.0547 24.1943 8.23281 21.5016C6.41094 18.8089 5.5 16.3167 5.5 14.025C5.5 10.5875 6.60573 7.84896 8.81719 5.80938C11.0286 3.76979 13.5896 2.75 16.5 2.75C19.4104 2.75 21.9714 3.76979 24.1828 5.80938C26.3943 7.84896 27.5 10.5875 27.5 14.025C27.5 16.3167 26.5891 18.8089 24.7672 21.5016C22.9453 24.1943 20.1896 27.1104 16.5 30.25Z"
-                                fill="white" />
-                        </svg>
+    <footer class="bg-[#BB2649]">
+        <div class="ml-auto mr-auto pl-5 pr-5 max-w-[1280px] sm:pt-20 pt-[30px] pb-6 sm:pb-[60px]">
+            <div class="sm:flex block sm:justify-between sm:ml-4  justify-center sm:mb-[60px] mb-10">
+                <ul class=" text-center">
+                    <div
+                        class="sm:flex sm:items-center gap-[15px] sm:mb-[5px] items-center mb-[10px] text-center sm:text-left">
+                        <img src="/img/phone.svg" class="flex mx-auto sm:mx-0 mb-2 w-6 h-6 sm:w-[34px] sm:h-[34px]"
+                            alt="">
+                        <li class=""><a href="#"
+                                class="sm:underline font-normal sm:text-2xl  text-sm text-white mx-auto sm:mx-0">8 (800)
+                                55-11-607</a></li>
                     </div>
-                    <div class="">
-                        <a class="underline mb-[5px] font-sans font-normal text-[24px] leading-[32px] text-[#FFFFFF]"
-                            href="https://www.whatsapp.com/">8
-                            (800) 55-11-607</a>
-                        <p class="font-normal mb-[5px] font-sans text-[24px] leading-[32px] text-[#FFFFFF]">WhatsApp:
-                            <a href="https://www.whatsapp.com/"
-                                class="underline font-sans font-normal text-[24px] leading-[32px] text-[#FFFFFF]">+79833887010</a>
-                        </p>
-                        <p class="font-normal font-sans text-[24px] leading-[32px] text-[#FFFFFF] mb-[26px]">
-                            E-mail: <a href="https://mail.google.com/mail/u/0/#inbox"
-                                class="underline font-normal font-sans text-[24px] leading-[32px] text-[#FFFFFF]">info@decors-pro.ru</a>
-                        </p>
-                        <p class="font-normal mb-[5px] font-sans text-[24px] leading-[32px] text-[#FFFFFF]">г.
-                            Солнечногорск, ул. Красная, 161</p>
-                    </div>
-                </div>
-                <div class="flex gap-[10px]">
-                    <div class="flex flex-col">
-                        <a class="font-sans font-normal text-[24px] leading-[32px] w-[300px] text-[#FFFFFF]"
-                            href="/products.html">Продукция</a>
-                        <a class="font-sans font-normal text-[24px] leading-[32px] w-[300px] text-[#FFFFFF]"
-                            href="/services.html">Услуги</a>
-                        <a class="font-sans font-normal text-[24px] leading-[32px] w-[300px] text-[#FFFFFF]"
-                            href="/advantages.html">Преимущества</a>
-                        <a class="font-sans font-normal text-[24px] leading-[32px] w-[300px] text-[#FFFFFF]"
-                            href="/stock.html">Акции</a>
-                    </div>
-                    <div class="flex flex-col">
-                        <a class="font-sans font-normal text-[24px] leading-[32px] w-[300px] text-[#FFFFFF]"
-                            href="/revies.html">Отзывы</a>
-                        <a class="font-sans font-normal text-[24px] leading-[32px] w-[300px] text-[#FFFFFF]"
-                            href="/certificate.html">Сертификаты</a>
-                        <a class="font-sans font-normal text-[24px] leading-[32px] w-[300px] text-[#FFFFFF]"
-                            href="/news.html">Новости и статьи</a>
-                    </div>
+                    <li class="sm:flex gap-1 sm:items-center text-center sm:text-left sm:pl-[50px]  mb-[5px]"><a
+                            href="tel:+79833887010" class="sm:text-2xl text-sm font-normal text-white">WhatsApp:</a><a
+                            href="#" class="sm:text-2xl text-sm font-normal text-white sm:underline">+79833887010</a>
+                    </li>
+                    <li class="sm:flex gap-1 sm:items-center text-center sm:text-left sm:pl-[50px] sm:mb-5 mb-[18px]"><a
+                            href="mailto:info@decors-pro.ru"
+                            class="sm:text-2xl text-sm font-normal text-white">E-mail:</a><a href="#"
+                            class="sm:text-2xl text-sm font-normal text-white sm:underline">info@decors-pro.ru</a> </li>
+                    <a href="https://maps.app.goo.gl/Z8YX8eEa13ezPgn2A"
+                        class="sm:flex sm:items-center text-center sm:text-left gap-[15px] sm:mb-[5px] mb-[45px] font-normal sm:text-2xl text-sm  text-white">
+                        <img src="/img/location.svg" class="flex mx-auto sm:mx-0 w-6 h-6 sm:w-[40px] sm:h-[40px] mb-4 "
+                            alt="">
+                        г. Солнечногорск,
+                        ул.
+                        Красная, 161
+                    </a>
+                </ul>
+                <div class="grid lg:grid-cols-3 sm:grid-cols-2  text-center sm:text-left gap-[10px]">
+                    <ul class="sm:max-w-[300px]">
+                        <li class="mb-[10px]"><a href="./product.html"
+                                class="sm:text-left sm:font-normal sm:text-2xl text-white text-base mb-[5px]">Продукция</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="./services.html"
+                                class="sm:text-left sm:font-normal sm:text-2xl text-white text-base mb-[5px]">Услуги</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="advantages.html"
+                                class="sm:text-left sm:font-normal sm:text-2xl text-white text-base mb-[5px]">Преимущества</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="stock.html"
+                                class="sm:text-left sm:font-normal sm:text-2xl text-base text-white mb-[5px]">Акции</a>
+                        </li>
+                    </ul>
+                    <ul class="sm:max-w-[300px]">
+                        <li class="mb-[10px]"><a href="./reviews.html"
+                                class="sm:text-left sm:font-normal sm:text-2xl text-base text-white mb-[5px]">Отзывы</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="./certificates.html"
+                                class="sm:text-left sm:font-normal sm:text-2xl text-base text-white mb-[5px]">Сертификаты</a>
+                        </li>
+                        <li class="mb-[10px]"><a href="./articles.html"
+                                class="sm:text-left sm:font-normal sm:text-2xl  text-base text-white mb-[5px]">Новости и
+                                статьи</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="flex gap-[32px] justify-center">
-                <p class="font-sans font-normal text-[24px] leading-[32px] text-[#FFFFFF]">©</p>
-                <div class="flex gap-[18px]">
-                    <p class="font-sans font-normal text-[24px] leading-[32px] text-[#FFFFFF]">2024 Экстерьерные пленки
-                        DECORS</p>
-                    <p class="text-[#FFFFFF]">.</p>
-                    <p class="font-sans font-normal text-[24px] leading-[32px] text-[#FFFFFF]">Самоклеящиеся листы для
-                        ламинации сэндвича</p>
-                </div>
+            <div class="sm:flex block gap-7 text-center justify-center ">
+                <p class="flex items-center justify-center text-center  text-white font-normal sm:text-2xl">
+                    <img src="/img/©.svg" class="flex" alt="">
+
+                    2024 Экстерьерные пленки DECORS
+                </p>
+                <p class="flex items-center justify-center text-center  text-white font-normal sm:text-2xl">
+                    Самоклеящиеся листы для ламинации сэндвича
+                </p>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <script>
+        let btn = document.querySelector(".menu")
+        let div = document.querySelector(".menu_div")
+        let x_menu = document.querySelector(".x_menu")
+
+
+        btn.addEventListener('click', function () {
+            div.classList.remove('right-[-100%]')
+            div.classList.add('right-0')
+        })
+
+        x_menu.addEventListener('click', function () {
+            div.classList.add('right-[-100%]')
+            div.classList.remove('right-0')
+        })
+    </script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
